@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu {
+  background: #252525;
+  padding: 10px 0;
+}
+
+.menu-nav ul {
+  display: flex;
+}
+
+.menu-nav a {
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+  padding: 10px;
+  margin-left: 10px;
+}
