@@ -17,17 +17,38 @@ img {
   display: block;
 }
 
+/* VARIAVEIS */
+
+:root {
+  --titulos: "Passion One", cursive;
+  --texts: "Space Grotesk", sans-serif;
+  --cor: #252525;
+  --cor0: #000;
+  --cor1: #111;
+  --cor2: #fff;
+  --cor3: #db6a01;
+  --cor4: #fb7c07;
+  --cor5: #b8b8b8;
+}
+
+/* Container */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* HEADER */
+
+.menu {
   display: grid;
   grid-template-columns: 1fr 400px;
   justify-content: space-around;
   align-items: center;
 }
 
-.menu {
-  background: #252525;
+.menu-bg {
+  background: linear-gradient(180deg, var(--cor1), var(--cor0));
   padding: 10px 0;
 }
 
@@ -36,8 +57,72 @@ img {
 }
 
 .menu-nav a {
-  color: #fff;
-  font-family: "Space Grotesk", sans-serif;
+  color: var(--cor2);
+  font-family: var(--texts);
   padding: 10px;
   margin-left: 10px;
+}
+
+/* BANNER */
+
+.banner-bg {
+  background: linear-gradient(var(--cor0), var(--cor1));
+  padding: 50px 0;
+  box-shadow: inset 0 -280px var(--cor2);
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) 1fr;
+}
+
+.banner-title h1 {
+  font-family: var(--titulos);
+  font-size: 3rem;
+  color: var(--cor2);
+  margin-bottom: 20px;
+}
+
+.banner-title p {
+  font-family: var(--texts);
+  font-size: 1.25rem;
+  color: var(--cor5);
+  margin-bottom: 50px;
+}
+
+.banner-title a {
+  display: block;
+  text-align: center;
+  font-family: "Passion One", cursive;
+  font-size: 1.875rem;
+  color: var(--cor2);
+  background: var(--cor3);
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.banner-title a:hover {
+  background: var(--cor4);
+}
+
+/* SOBRE */
+.sobre {
+  padding-bottom: 50px 0;
+}
+
+.sobre h2 {
+  font-family: var(--titulos);
+  font-size: 2.75rem;
+  color: var(--cor);
+  margin-bottom: 30px;
+}
+
+.sobre p {
+  font-family: var(--texts);
+  font-size: 1.125rem;
+  color: var(--cor1);
+}
+
+.sobre p + p {
+  margin-top: 30px;
 }
