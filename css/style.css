@@ -408,3 +408,33 @@ textarea {
   background: var(--cor4);
   transform: translate3d(0, -5px, 0);
 }
+
+/* FOOTER */
+
+.footer-bg {
+  background: linear-gradient(var(--cor1), var(--cor0));
+  padding: 50px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 200px;
+}
+
+.contatos-ft h2,
+.footer-nav h2,
+.footer-nav a {
+  color: var(--cor2);
+}
+
+.footer-nav li {
+  font-family: var(--labels);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contatos-ft address a,
+.contatos-ft address p {
+  padding: 5px 0;
+}
