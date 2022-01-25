@@ -28,6 +28,7 @@ h2 {
 :root {
   --titulos: "DM Serif Display", serif;
   --texts: "Space Grotesk", sans-serif;
+  --labels: "Montserrat", sans-serif;
   --cor: #252525;
   --cor0: #000;
   --cor1: #111;
@@ -35,6 +36,7 @@ h2 {
   --cor3: #db6a01;
   --cor4: #fb7c07;
   --cor5: #b8b8b8;
+  --cor6: #f9f8f8;
 }
 
 /* Container */
@@ -151,6 +153,7 @@ h2 {
   padding: 50px;
   border-top: 2px solid var(--cor0);
   border-bottom: 2px solid var(--cor0);
+  background: var(--cor6);
 }
 
 .numeros h3 {
@@ -249,4 +252,159 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 5px;
+}
+
+/* ATUAÇÃO */
+
+.atuacao-bg {
+  background: var(--cor6);
+  padding: 50px 0;
+}
+
+.atuacao p {
+  font-family: var(--texts);
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--cor5);
+  margin-bottom: 30px;
+}
+
+.atuacao dl {
+  max-width: 1160px;
+  min-width: 300px;
+}
+
+.atuacao dt {
+  background: var(--cor);
+  color: var(--cor2);
+  font-family: var(--texts);
+  font-size: 1.25rem;
+  padding: 10px 20px;
+}
+
+.atuacao dd {
+  font-family: var(--texts);
+  font-size: 1rem;
+  background: var(--cor2);
+  border: 1px solid var(--cor0);
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+/* CONTATO */
+
+.contato-bg {
+  background: linear-gradient(var(--cor0), var(--cor1));
+  padding: 50px 0;
+}
+
+.contato h2 {
+  color: var(--cor2);
+}
+
+.contato h3 {
+  font-family: var(--texts);
+  font-size: 1rem;
+  color: var(--cor5);
+  max-width: 40ch;
+  margin-bottom: 50px;
+}
+
+.content-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.infos {
+  background: var(--cor0);
+  color: var(--cor2);
+  padding: 50px;
+}
+
+.infos h4 {
+  font-family: var(--titulos);
+  font-size: 1.875rem;
+  margin-bottom: 50px;
+}
+
+.telefone {
+  background: url("../img/whatsapp.svg") no-repeat 0;
+  margin-bottom: 20px;
+}
+
+.email {
+  background: url("../img/email.svg") no-repeat 0 9px;
+}
+
+.email2 {
+  margin-bottom: 20px;
+}
+
+.endereco {
+  background: url("../img/endereco.svg") no-repeat 0;
+  margin-bottom: 20px;
+}
+
+address {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+address a,
+address p {
+  font-family: var(--labels);
+  font-size: 1.2rem;
+  font-style: normal;
+  color: var(--cor2);
+  padding: 5px 30px;
+}
+
+.formulario {
+  background: var(--cor2);
+  padding: 50px;
+}
+
+form {
+  font-family: var(--labels);
+  font-size: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  font-size: 1.125rem;
+  background: var(--cor6);
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  outline-color: var(--cor1);
+  border: 1px solid var(--cor5);
+}
+
+textarea {
+  max-height: 150px;
+  resize: none;
+}
+
+.formulario button {
+  cursor: pointer;
+  display: block;
+  font-family: var(--titulos);
+  font-size: 1.875rem;
+  color: var(--cor2);
+  background: var(--cor3);
+  width: 100%;
+  padding: 15px;
+  border-radius: 6px;
+  border: none;
+  transition: transform 0.3s;
+}
+
+.formulario button:hover {
+  background: var(--cor4);
+  transform: translate3d(0, -5px, 0);
 }
