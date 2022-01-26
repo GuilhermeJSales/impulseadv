@@ -1,0 +1,36 @@
+/* ATUAÇÃO */
+
+.atuacao-bg {
+  background: var(--cor6);
+  padding: 50px 0;
+}
+
+.atuacao h3 {
+  font-family: var(--texts);
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--cor5);
+  margin-bottom: 30px;
+}
+
+.atuacao dl {
+  max-width: 1160px;
+  min-width: 300px;
+}
+
+.atuacao dt {
+  background: var(--cor);
+  color: var(--cor2);
+  font-family: var(--texts);
+  font-size: 1.25rem;
+  padding: 10px 20px;
+}
+
+.atuacao dd {
+  font-family: var(--texts);
+  font-size: 1rem;
+  background: var(--cor2);
+  border: 1px solid var(--cor0);
+  padding: 10px;
+  margin-bottom: 5px;
+}

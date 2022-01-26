@@ -1,0 +1,14 @@
+/* SOBRE */
+.sobre {
+  padding-bottom: 50px;
+}
+
+.sobre p {
+  font-family: var(--texts);
+  font-size: 1.125rem;
+  color: var(--cor1);
+}
+
+.sobre p + p {
+  margin-top: 30px;
+}

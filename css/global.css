@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h2 {
+  font-family: var(--titulos);
+  font-size: 2.75rem;
+  color: var(--cor);
+  margin-bottom: 30px;
+}
+
+/* VARIAVEIS */
+
+:root {
+  --titulos: "DM Serif Display", serif;
+  --texts: "Space Grotesk", sans-serif;
+  --labels: "Montserrat", sans-serif;
+  --cor: #252525;
+  --cor0: #000;
+  --cor1: #111;
+  --cor2: #fff;
+  --cor3: #db6a01;
+  --cor4: #fb7c07;
+  --cor5: #b8b8b8;
+  --cor6: #f9f8f8;
+}
+
+/* Container */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+
+.footer-bg {
+  background: linear-gradient(var(--cor1), var(--cor0));
+  padding: 50px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 200px;
+}
+
+.contatos-ft h2,
+.footer-nav h2,
+.footer-nav a {
+  color: var(--cor2);
+}
+
+.footer-nav li {
+  font-family: var(--labels);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contatos-ft address a,
+.contatos-ft address p {
+  padding: 5px 0;
+}

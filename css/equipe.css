@@ -1,0 +1,57 @@
+/* EQUIPE --- SLIDE*/
+
+.equipe {
+  padding: 50px 0;
+}
+
+.slide {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.equipe-item {
+  max-width: 400px;
+  min-width: 300px;
+  border: 2px solid var(--cor0);
+  border-radius: 4px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  text-align: center;
+  opacity: 0.6;
+  transform: scale(0.8);
+}
+
+.equipe-item.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.advogado {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.equipe-item h3 {
+  font-family: var(--titulos);
+  font-size: 1.25rem;
+}
+
+.equipe-item h4 {
+  font-family: var(--texts);
+  font-size: 1rem;
+  color: #fb7c07;
+  margin: 10px 0 10px 0%;
+}
+
+.sociais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}

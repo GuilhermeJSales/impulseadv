@@ -1,0 +1,41 @@
+/* HEADER */
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-bg {
+  background: linear-gradient(180deg, var(--cor1), var(--cor0));
+  padding: 10px 0;
+}
+
+.menu-nav ul {
+  display: flex;
+}
+
+.menu-nav a {
+  color: var(--cor2);
+  font-family: var(--texts);
+  font-weight: bold;
+  padding: 10px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.menu-nav a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 4px;
+  background: var(--cor4);
+  transition: 0.3s ease-in-out;
+  margin: 20px 0 0 20px;
+  position: absolute;
+}
+
+.menu-nav a:hover::after {
+  width: 80%;
+}

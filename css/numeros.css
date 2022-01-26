@@ -1,0 +1,48 @@
+/* numeros */
+
+.numeros-bg {
+  padding: 50px;
+  border-top: 2px solid var(--cor0);
+  border-bottom: 2px solid var(--cor0);
+  background: var(--cor6);
+}
+
+.numeros h3 {
+  font-family: var(--texts);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: var(--cor5);
+}
+
+.container-numeros {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 350px);
+  padding-top: 50px;
+}
+
+.numeros-item {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  text-align: center;
+}
+
+.numeros-item img {
+  grid-row: span 2;
+}
+
+.num {
+  display: flex;
+  justify-content: center;
+  color: var(--cor3);
+  font-family: var(--texts);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.num-desc {
+  font-family: var(--texts);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
