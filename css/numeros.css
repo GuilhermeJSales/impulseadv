@@ -18,7 +18,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(3, 1fr);
   padding-top: 50px;
 }
 
@@ -34,6 +34,7 @@
 
 .num {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   color: var(--cor3);
   font-family: var(--texts);
@@ -45,4 +46,34 @@
   font-family: var(--texts);
   font-size: 1.25rem;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+  .numeros h3 {
+    font-size: 1.125rem;
+  }
+
+  .container-numeros {
+    justify-content: space-around;
+    padding-top: 30px;
+  }
+
+  .num {
+    font-size: 1.5rem;
+  }
+
+  .num-desc {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .numeros-item {
+    grid-template-columns: 1fr;
+  }
+
+  .numeros-item img {
+    justify-self: center;
+    margin-bottom: 20px;
+  }
 }

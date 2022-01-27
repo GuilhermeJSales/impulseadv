@@ -60,7 +60,7 @@ address {
 address a,
 address p {
   font-family: var(--labels);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-style: normal;
   color: var(--cor2);
   padding: 5px 30px;
@@ -114,4 +114,30 @@ textarea {
 .formulario button:hover {
   background: var(--cor4);
   transform: translate3d(0, -5px, 0);
+}
+
+@media only screen and (max-width: 1000px) {
+  .infos {
+    padding: 10px;
+  }
+
+  .infos h4 {
+    font-size: 1.5rem;
+  }
+
+  address a,
+  address p {
+    font-size: 1.125rem;
+    padding: 6px 30px;
+  }
+
+  .formulario button {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .content-form {
+    grid-template-columns: 1fr;
+  }
 }

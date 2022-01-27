@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 li {
   list-style: none;
 }
@@ -59,7 +63,7 @@ h2 {
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 200px;
+  gap: 100px;
 }
 
 .contatos-ft h2,
@@ -77,4 +81,47 @@ h2 {
 .contatos-ft address a,
 .contatos-ft address p {
   padding: 5px 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    max-width: 940px;
+  }
+
+  /* FOOTER */
+
+  .contatos-ft h2,
+  .footer-nav h2 {
+    font-size: 2rem;
+  }
+
+  .footer-nav li,
+  .contatos-ft address a,
+  .contatos-ft address p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    max-width: 740px;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
 }
