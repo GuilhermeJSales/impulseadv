@@ -2,7 +2,7 @@
 
 .banner-bg {
   background: linear-gradient(var(--cor0), var(--cor1));
-  padding: 50px 0;
+  padding-top: 50px;
   box-shadow: inset 0 -280px var(--cor2);
 }
 
