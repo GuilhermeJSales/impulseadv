@@ -12,6 +12,10 @@
   gap: 20px;
 }
 
+.slide-wrapper {
+  overflow-x: hidden;
+}
+
 .equipe-item {
   max-width: 400px;
   min-width: 300px;

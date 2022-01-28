@@ -41,7 +41,7 @@ export default class MenuMobile {
       this.ulMenu.removeAttribute(this.outside);
       this.mobileMenu.classList.remove(this.activeClass);
       this.ulMenu.classList.remove(this.activeClass);
-      this.liMenu.forEach(link => {
+      this.liMenu.forEach((link) => {
         link.style.animation = '';
       });
     }
@@ -52,7 +52,9 @@ export default class MenuMobile {
   }
 
   init() {
-    this.addEventMenu();
+    if (this.mobileMenu) {
+      this.addEventMenu();
+    }
     return this;
   }
 }
