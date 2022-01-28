@@ -1,5 +1,5 @@
 import MenuMobile from './modules/menu-mobile.js';
 
-const mobileMenu = new MenuMobile('.mobile-menu', '.menu-nav ul', '.menu-nav li');
+const mobileMenu = new MenuMobile('[data-menu="button"]', '[data-menu = "nav"]', '[data-menu = "nav"] li');
 
 mobileMenu.init();

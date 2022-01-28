@@ -19,14 +19,19 @@
   <!-- HEADER -->
   <header class="menu-bg">
     <div class="container menu">
-      <img class="logotipo" src="./img/logotipo.svg" alt="Impulse Logotipo">
-      <div class="mobile-menu">
+      <a href="index.html">
+        <picture>
+          <source srcset="./img/logotipo.svg" media="(min-width:800px)">
+          <img class="logotipo" src="./img/logotipo-mobile.svg" alt="Impulse Logotipo">
+        </picture>
+      </a>
+      <div class="mobile-menu" data-menu="button">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
       </div>
-      <nav class="menu-nav">
-        <ul>
+      <nav>
+        <ul class="menu-nav" data-menu="nav">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#atuacao">Atuação</a></li>
           <li><a href="#contato">Contato</a></li>
