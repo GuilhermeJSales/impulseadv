@@ -35,12 +35,12 @@
 }
 
 .telefone {
-  background: url("../img/whatsapp.svg") no-repeat 0;
+  background: url("../img/whatsapp.png") no-repeat 0;
   margin-bottom: 20px;
 }
 
 .email {
-  background: url("../img/email.svg") no-repeat 0 9px;
+  background: url("../img/email.png") no-repeat 0 9px;
 }
 
 .email2 {
@@ -48,7 +48,7 @@
 }
 
 .endereco {
-  background: url("../img/endereco.svg") no-repeat 0;
+  background: url("../img/endereco.png") no-repeat 0;
   margin-bottom: 20px;
 }
 
@@ -139,5 +139,19 @@ textarea {
 @media only screen and (max-width: 800px) {
   .content-form {
     grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  address a,
+  address p {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .email,
+  .telefone,
+  .endereco {
+    background: none;
   }
 }
