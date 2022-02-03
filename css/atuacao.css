@@ -18,11 +18,19 @@
 }
 
 .atuacao dt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
   background: var(--cor);
   color: var(--cor2);
   font-family: var(--texts);
   font-size: 1.25rem;
   padding: 10px 20px;
+}
+
+.atuacao dt:hover {
+  background: var(--cor1);
 }
 
 .atuacao dd {
@@ -38,4 +46,38 @@
   .atuacao h3 {
     font-size: 1.125rem;
   }
+}
+
+.js .atuacao dt::after {
+  content: "";
+  display: block;
+  background: url("../img/accordion.svg") center center no-repeat;
+  width: 15px;
+  height: 15px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.js .atuacao dt.active::after {
+  content: "";
+  display: block;
+  background: url("../img/accordion.svg") center center no-repeat;
+  width: 15px;
+  height: 15px;
+  transform: rotate(46deg);
+}
+
+.js .atuacao dd {
+  overflow-y: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.js .atuacao dd.active {
+  overflow-y: auto;
+  max-height: 300px;
+  padding: 10px;
+  opacity: 1;
 }
