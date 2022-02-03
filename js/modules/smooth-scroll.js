@@ -25,5 +25,6 @@ export default class SmoothScroll {
     if (this.sections) {
       this.addEventScroll();
     }
+    return this;
   }
 }
