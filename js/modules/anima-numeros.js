@@ -8,15 +8,15 @@ export default class AnimaNumeros {
   }
 
   static addNumberAnimation(numero) {
-    const total = +numero.innerHTML;
+    const total = +numero.innerText;
     let start = 0;
     const incremento = Math.floor(total / 100 + 1);
     const timer = setInterval(() => {
       start += incremento;
-      numero.innerHTML = start;
+      numero.innerText = start;
       if (start > total) {
-        clearInterval(timer);
         numero.innerText = total;
+        clearInterval(timer);
       }
     }, 25);
   }
@@ -26,9 +26,10 @@ export default class AnimaNumeros {
   }
 
   handleMutation(mutation) {
-    if (mutation[0].target.classList.contains(this.observerClass));
-    this.observer.disconnect;
-    this.animaNumeros();
+    if (mutation[0].target.classList.contains(this.observerClass)) {
+      this.observer.disconnect();
+      this.animaNumeros();
+    }
   }
 
   addMutationObserver() {

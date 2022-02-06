@@ -109,7 +109,47 @@ h2 {
 
   .footer {
     grid-template-columns: 1fr;
-
     gap: 20px;
+  }
+}
+
+.js [data-scroll] {
+  opacity: 0;
+  transition: 2s;
+}
+
+.js [data-scroll].active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.js [data-scroll="left"] {
+  transform: translate3d(-50%, 0, 0);
+}
+
+.js [data-scroll="top"] {
+  transform: translate3d(0, -50%, 0);
+}
+
+.js [data-scroll="bottom"] {
+  transform: translate3d(0, 50%, 0);
+}
+
+.js .menu-nav li {
+  opacity: 0;
+  transform: translate3d(0, -150%, 0);
+}
+
+@media only screen and (max-width: 1000px) {
+  .js .menu-nav li {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes animateMenu {
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
