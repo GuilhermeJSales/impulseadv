@@ -32,22 +32,22 @@
       </div>
       <nav>
         <ul class="menu-nav" data-menu="nav">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#atuacao">Atuação</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li data-index><a href="#sobre">Sobre</a></li>
+          <li data-index><a href="#atuacao">Atuação</a></li>
+          <li data-index><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- BANNER -->
-  <main class="banner-bg" data-scroll="left">
+  <main class="banner-bg">
     <section class="container banner">
-      <picture class="banner-img">
+      <picture data-scroll="left" class="banner-img">
         <source srcset="img/mala.jpg" media="(min-width:800px)">
         <img src="img/mala2.jpg" alt="banner picture">
       </picture>
-      <div class='banner-title'>
+      <div class='banner-title' data-scroll="left">
         <h1>Impulse Advogados</h1>
         <h2>Equipe de advogados especializados em diversas áreas de atuação. A experiência e os bons resultados são nossas marcas registradas.</h2>
         <a href="#contato">Entrar em contato</a>
@@ -56,16 +56,16 @@
   </main>
 
   <!-- SOBRE -->
-  <section class="sobre container" id="sobre" data-scroll="left">
-    <h2>Impulse Advogados</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+  <section class="sobre container" id="sobre">
+    <h2 data-scroll="bottom">Impulse Advogados</h2>
+    <p data-scroll="top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    <p data-scroll="top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
   </section>
 
   <!-- NUMEROS -->
   <section class="numeros-bg">
-    <div class="numeros container">
+    <div data-scroll="left" class="numeros container">
       <h3>Excelente Rendimento!</h3>
       <h2>os números falam por nós!</h2>
       <div class="container-numeros">
@@ -146,10 +146,10 @@
   <!-- ATUAÇÃO -->
   <section class="atuacao-bg" id="atuacao">
     <div class="atuacao container">
-      <h2>Áreas de atuação</h2>
-      <h3>PRECISA DE AJUDA? ATUAMOS EM TODAS AS ÁREAS DEMONSTRADAS ABAIXO</h3>
+      <h2 data-scroll="top">Áreas de atuação</h2>
+      <h3 data-scroll="top">PRECISA DE AJUDA? ATUAMOS EM TODAS AS ÁREAS DEMONSTRADAS ABAIXO</h3>
 
-      <dl data-accordion>
+      <dl data-scroll="bottom" data-accordion>
         <dt>Trabalhista</dt>
         <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</dd>
         <dt>Criminal</dt>
@@ -166,10 +166,10 @@
   <!-- CONTATO -->
   <section class="contato-bg" aria-label="Contato" id="contato">
     <div class="container contato">
-      <h2>Contato</h2>
-      <h3>Entre em contato através do nosso WhatsApp, ou preencha o formulário e aguarde nosso retorno.</h3>
+      <h2 data-scroll="bottom">Contato</h2>
+      <h3 data-scroll="bottom">Entre em contato através do nosso WhatsApp, ou preencha o formulário e aguarde nosso retorno.</h3>
       <div class="content-form">
-        <div class="infos">
+        <div data-scroll="bottom" class="infos">
           <h4>Informações de contato:</h4>
           <address>
             <a class="telefone" href="tel:+551199999-9999">(11)99999-9999</a>
@@ -178,7 +178,7 @@
             <p class="endereco">Rua Colonia Leopoldina, 196 - Vila Silvia - SP</p>
           </address>
         </div>
-        <div class="formulario">
+        <div data-scroll="top" class="formulario">
           <form>
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name">
