@@ -155,3 +155,15 @@ textarea {
     background: none;
   }
 }
+
+/* VALIDAO INPUT EMAIL */
+
+.erro-text {
+  display: none;
+}
+
+.erro-text.ativar {
+  display: block;
+  font: 400 bold "";
+  margin-bottom: 10px;
+}
