@@ -1,5 +1,5 @@
 # Impulse Advogados
-> Status : Em desenvolvimento ⚠️
+> Status : Finalizado
 
 ### Este é o desenvolvimento de um site para uma empresa FICTÍCIA.
 
