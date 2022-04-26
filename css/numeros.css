@@ -1,7 +1,8 @@
 /* numeros */
 
 .numeros-bg {
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom:50px;
   border-top: 2px solid var(--cor0);
   border-bottom: 2px solid var(--cor0);
   background: var(--cor6);
